@@ -1,0 +1,22 @@
+[package]
+name = "resize-program"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+windows = { version = "0.61.3", features = ["Win32_UI_WindowsAndMessaging", "Win32_Foundation"] }
+egui = "0.31.1"
+eframe = "0.31.1"
+egui-notify = "0.17.0"
+egui_extras = {version = "0.31.1", features = ["default", "image"] }
+strum = "0.27.1"
+strum_macros = "0.27.1"
+zip = "4.3.0"
+egui-wgpu = { version = "0.31.1",features = ["winit"] }
+raw-window-handle = "0.6.2"
+egui-winit = "0.31.1"
+winit = "0.30.9"
+env_logger = { version = "0.10", default-features = false, features = [
+    "auto-color",
+    "humantime",
+] }
